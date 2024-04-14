@@ -262,6 +262,7 @@ a:focus {
 .portfolio {
   position: relative;
   padding: 45px 0 15px 0;
+  background-color: #797979;
 }
 
 .portfolio #portfolio-filter {
@@ -420,12 +421,11 @@ a:focus {
 .contact {
   position: relative;
   width: 100%;
-  margin: 45px 0;
+  margin: 1px 0;
   background: rgba(158, 29, 44, 0.95);
 }
 
 .contact .container-fluid {
-  background: url(../img/contact.jpg) left center no-repeat;
   background-size: contain;
 }
 
