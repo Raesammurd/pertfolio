@@ -611,9 +611,43 @@ a:focus {
   color: #414141;
 }
 
-@media (min-width:601px) and (max-width:1500px){
+@media (min-width:120px) and (max-width:2100px){
   .abt-div{
-    font-size: .5rem;
+    font-size: .9rem;
+    width: 30%;
+    height: 35rem;
+  }
+
+  .about-div{
+    width: 80%;
+    height: 100vh;
+  }
+
+  .abt-section{
+    
+  }
+}
+
+@media (min-width:901px) and (max-width:1200px){
+  .abt-div{
+    font-size: .9rem;
+    width: 50%;
+    height: 35rem;
+  }
+
+  .about-div{
+    width: 80%;
+    height: 100vh;
+  }
+
+  .abt-section{
+    
+  }
+}
+
+@media (min-width:601px) and (max-width:900px){
+  .abt-div{
+    font-size: .7rem;
     width: 35%;
     height: 30rem;
   }
