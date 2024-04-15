@@ -94,14 +94,14 @@ a:focus {
 
 .hero .hero-text p {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .hero .hero-text h1 {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 15px;
@@ -173,11 +173,15 @@ a:focus {
   display: none;
 }
 
+.abt-section-alt-2{
+  display: none;
+}
+
 .about-div{
   display: inline-flex;
   background: #ffffff;
   margin-top: 10rem;
-  width: 80%;
+  width: 100%;
   height: 110vh;
   justify-content: center;
   border-radius: 2%;
@@ -207,14 +211,18 @@ a:focus {
 
 .abt-1 > h3{
   margin-bottom: 3rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
 }
 
 .abt-1 > h5{
   margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .abt-1 > p{
   margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .abt-2{
@@ -225,6 +233,12 @@ a:focus {
 
 .abt-2 > ul {
   list-style: none;
+}
+
+.cv-btn{
+  text-align: center;
+  justify-content: center;
+  margin-right: 2rem;
 }
 
 .social-icons {
@@ -597,11 +611,48 @@ a:focus {
   color: #414141;
 }
 
+@media (min-width:601px) and (max-width:1500px){
+  .abt-div{
+    font-size: .5rem;
+    width: 35%;
+    height: 30rem;
+  }
+
+  .about-div{
+    height: 150vh;
+  }
+
+  .abt-section{
+    
+  }
+}
+
 @media (min-width:481px) and (max-width:600px){
+  .abt-section-alt{
+    display: block;
+    background-color: rgba(158, 29, 44, 0.95);
+    margin-top: -4rem;
+    padding: 2rem;
+  }
+
+  .abt-div-alt{
+    background-color: #797979;
+    color: #ffffff;
+    margin: 4rem;
+  }
+
+  .abt-section{
+    display: none;
+  }
 
 }
 
 @media (max-width:480px){
+
+  .my-name{
+    
+  }
+
   .abt-section{
     display: none;
   }
@@ -623,4 +674,13 @@ a:focus {
     margin: 4rem;
   }
 
+  .navbar-nav{
+    display: none;
+  }
+  
+  .ham-menu{
+    display: block;
+    position: absolute;
+
+  }
 }
