@@ -611,7 +611,7 @@ a:focus {
   color: #414141;
 }
 
-@media (min-width:120px) and (max-width:2100px){
+@media (min-width:1200px) and (max-width:2100px){
   .abt-div{
     font-size: .9rem;
     width: 30%;
@@ -620,7 +620,7 @@ a:focus {
 
   .about-div{
     width: 80%;
-    height: 100vh;
+    height: 140vh;
   }
 
   .abt-section{
@@ -713,8 +713,7 @@ a:focus {
   }
   
   .ham-menu{
-    display: block;
-    position: absolute;
+    
 
   }
 }
