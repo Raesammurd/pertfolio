@@ -149,14 +149,13 @@ a:focus {
   color: black; 
 }
 
-.ham-div{
-  display: none;
+.bx-menu{
+  font-size: 40px;
 }
 
-.hamburger-menu{
-  display: none;
+.bx-window-close{
+  font-size: 30px;
 }
-
 
 /* About section */
 .abt-section{
@@ -166,14 +165,14 @@ a:focus {
   height: 70rem;
   width: 100%;
   justify-content: center;
-  background-color: rgba(158, 29, 44, 0.95);
+  background: linear-gradient( rgba(158, 29, 44, 0.95) , rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url();
   margin-top: -3rem;
   margin-bottom: 4rem;
 }
 
 .abt-section-alt{
   display: none;
-  background-color: rgba(158, 29, 44, 0.95);
+  background: linear-gradient( rgba(158, 29, 44, 0.95) , rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url();
   background-size: cover;
   margin-top: -2.8rem;
   padding-top: 7rem;
@@ -184,8 +183,10 @@ a:focus {
 }
 
 .abt-div-alt{
-  background-color: #797979;
-  color: #ffffff;
+  /* background-color: #802c2c;
+  background-color: linear-gradient(to right, #f0f0f0 0%, #dcdcdc 50%, #e0e0e0 100%); */
+  /* background: linear-gradient(rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url(); */
+  background: linear-gradient( rgba(158, 29, 44, 0.95) , rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url();
   margin: 1.5rem;
   height: 20rem;
   width: 80%;
@@ -193,6 +194,7 @@ a:focus {
   padding: 2rem;
   border-radius: 2rem;
   margin-left: 2.5rem;
+  color: #fff;
 }
 
 .abt-3-alt{
@@ -205,7 +207,7 @@ a:focus {
 
 .about-div{
   display: inline-flex;
-  background: #ffffff;
+  background: linear-gradient(rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url();
   margin-top: 10rem;
   width: 100%;
   height: 110vh;
@@ -219,7 +221,7 @@ a:focus {
   justify-content: center;
   height: 50rem;
   width: 33.33%;
-  background-color: #797979;
+  background: linear-gradient(rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url();
   color: white;
 }
 
@@ -462,7 +464,7 @@ a:focus {
   position: relative;
   width: 100%;
   margin: 1px 0;
-  background: rgba(158, 29, 44, 0.95);
+  background: linear-gradient( rgba(158, 29, 44, 0.95) , rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url();
 }
 
 .contact .container-fluid {
@@ -531,7 +533,7 @@ a:focus {
 .footer {
   position: relative;
   margin-top: -3rem;
-  background: rgba(158, 29, 44, 0.95);
+  background: linear-gradient( rgba(158, 29, 44, 0.95) , rgba(14, 13, 13, 0.95), rgba(158, 29, 44, 0.95)), url();
 }
 
 .footer .container-fluid {
@@ -789,5 +791,25 @@ list-style: none;
 
   .hero-text{
     margin-right: 2rem;
+  }
+
+  .footer-info > h2{
+    display: none;
+  }
+
+  .footer-info > h3{
+    display: none;
+  }
+
+  .footer-menu{
+   display: none;
+  }
+
+  .footer-info{
+    width: 40%;
+  }
+
+  .footer-menu > p{
+    display: none;
   }
 }
