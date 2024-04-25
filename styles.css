@@ -174,20 +174,29 @@ a:focus {
 .abt-section-alt{
   display: none;
   background-color: rgba(158, 29, 44, 0.95);
+  background-size: cover;
   margin-top: -2.8rem;
-  padding-top: 4rem;
+  padding-top: 7rem;
   height: 90rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
 .abt-div-alt{
   background-color: #797979;
   color: #ffffff;
-  margin: 4rem;
+  margin: 1.5rem;
   height: 20rem;
-  width: 23rem;
+  width: 80%;
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
+
+}
+
+.abt-3-alt{
+  height: 25rem;
 }
 
 .abt-section-alt-2{
@@ -684,9 +693,6 @@ list-style: none;
     height: 55rem;
   }
 
-  .abt-section{
-    
-  }
 }
 
 @media (min-width:901px) and (max-width:1200px){
@@ -761,7 +767,7 @@ list-style: none;
   }
 
   .abt-section-alt{
-    display: block;
+    display: flex;
   }
 
   .about-div-alt{
