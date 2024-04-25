@@ -24,3 +24,11 @@ tooggleBtn.onclick = function () {
   ? 'fa-solid fa-xmark'
   : 'fa-solid fa-bars'
 }
+
+
+function downloadFile(url) {
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'cv.pdf'; 
+  link.click();
+}
