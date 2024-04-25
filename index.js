@@ -12,3 +12,15 @@
 
 
 
+const tooggleBtn = document.querySelector('.toggle-btn')
+const tooggleBtnIcon = document.querySelector('.toggle-btn-i')
+const dropDownMenu = document.querySelector('.dropdown-menu')
+
+tooggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle('open')
+  const isopen = dropDownMenu.classList.contains('open')
+  
+  tooggleBtnIcon.classList = isopen
+  ? 'fa-solid fa-xmark'
+  : 'fa-solid fa-bars'
+}

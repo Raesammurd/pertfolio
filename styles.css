@@ -149,9 +149,11 @@ a:focus {
   color: black; 
 }
 
-.hamburger{
-  width: 30px;
-  height: 30px;
+.ham-div{
+  display: none;
+}
+
+.hamburger-menu{
   display: none;
 }
 
@@ -171,6 +173,21 @@ a:focus {
 
 .abt-section-alt{
   display: none;
+  background-color: rgba(158, 29, 44, 0.95);
+  margin-top: -2.8rem;
+  padding-top: 4rem;
+  height: 90rem;
+}
+
+.abt-div-alt{
+  background-color: #797979;
+  color: #ffffff;
+  margin: 4rem;
+  height: 20rem;
+  width: 23rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
 }
 
 .abt-section-alt-2{
@@ -446,7 +463,7 @@ a:focus {
 .contact .contact-form {
   position: relative;
   padding: 90px 0 90px 45px;
-  background: rgba(158, 29, 44, 0.95);
+  background: gr;
 }
 
 .contact .contact-form input {
@@ -611,6 +628,50 @@ a:focus {
   color: #414141;
 }
 
+/* dropdown menu */
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 50px; 
+  height: 0;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0.7rem;
+}
+
+.dropdown-menu.open{
+  height: 240px;
+}
+
+.dropdown-menu > ul > li{
+  padding: 0.2rem;
+  text-align: center;
+list-style: none;
+} 
+
+.dropdown-menu > ul > li > a:hover{
+  background-color: rgba(158, 29, 44, 0.95);
+  color: black; 
+  width: 50%;
+} 
+
+.dropdown-menu.open{
+  height: 240px;
+}
+
+
+.toggle-btn{
+  display: none;
+}
+
+ 
+
 @media (min-width:1200px) and (max-width:2100px){
   .abt-div{
     font-size: .9rem;
@@ -620,7 +681,7 @@ a:focus {
 
   .about-div{
     width: 80%;
-    height: 140vh;
+    height: 55rem;
   }
 
   .abt-section{
@@ -637,7 +698,7 @@ a:focus {
 
   .about-div{
     width: 80%;
-    height: 100vh;
+    height: 55rem;
   }
 
   .abt-section{
@@ -650,43 +711,51 @@ a:focus {
     font-size: .7rem;
     width: 35%;
     height: 30rem;
-  }
+  } 
 
   .about-div{
-    height: 150vh;
+    height: 50rem;
   }
 
-  .abt-section{
-    
-  }
 }
 
 @media (min-width:481px) and (max-width:600px){
+
+.navbar-nav{
+  display: none;
+}
+
+.ham-div{
+  display: flex;
+}
+
+.hamburger-menu{
+  display: flex;
+}
+
+.dropdown-menu{
+  display: block;
+}
+
   .abt-section-alt{
     display: block;
-    background-color: rgba(158, 29, 44, 0.95);
-    margin-top: -4rem;
-    padding: 2rem;
   }
 
   .abt-div-alt{
-    background-color: #797979;
-    color: #ffffff;
-    margin: 4rem;
+    display: block;
   }
 
   .abt-section{
     display: none;
   }
 
+  .toggle-btn{
+    display: block;
+  }
+
 }
 
 @media (max-width:480px){
-
-  .my-name{
-    
-  }
-
   .abt-section{
     display: none;
   }
@@ -697,23 +766,18 @@ a:focus {
 
   .about-div-alt{
     display: block;
-    background-color: rgba(158, 29, 44, 0.95);
-    margin-top: -4rem;
-    padding: 2rem;
   }
 
-  .abt-div-alt{
-    background-color: #797979;
-    color: #ffffff;
-    margin: 4rem;
-  }
-
+  
   .navbar-nav{
     display: none;
   }
-  
-  .ham-menu{
-    
 
+  .dropdown-menu{
+    display: block;
+  }
+
+  .toggle-btn{
+    display: block;
   }
 }
