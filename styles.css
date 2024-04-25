@@ -786,4 +786,8 @@ list-style: none;
   .toggle-btn{
     display: block;
   }
+
+  .hero-text{
+    margin-right: 2rem;
+  }
 }
